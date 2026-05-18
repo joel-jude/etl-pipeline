@@ -1,10 +1,23 @@
-# etl-pipeline project
+# Maximus Resume Reality Reconstruction Lab
 
-Day 1 started.
+## Day 1 Deliverables
 
-Goal:
-Build a local analytics stack with Python, PostgreSQL, and Streamlit.
+Completed:
 
-## Environment
+- Git repository initialized
+- Python virtual environment configured
+- Dependencies installed
+- PostgreSQL database created
+- Python connected to PostgreSQL
+- Streamlit application deployed locally
 
-Python virtual environment created successfully.
+## Tech Stack
+
+- Python
+- PostgreSQL
+- Streamlit
+- Git
+
+## Result
+
+Built a local analytics stack successfully.
