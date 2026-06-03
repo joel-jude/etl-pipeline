@@ -1,23 +1,53 @@
-# Maximus Resume Reality Reconstruction Lab
+# QA Pipeline Demo
 
-## Day 1 Deliverables
+Demo ETL pipeline showing:
 
-Completed:
+1. Generate review data
+2. Store review data in CSV
+3. Load CSV into PostgreSQL
+4. Query review records for QA analysis
 
-- Git repository initialized
-- Python virtual environment configured
-- Dependencies installed
-- PostgreSQL database created
-- Python connected to PostgreSQL
-- Streamlit application deployed locally
+## Setup
 
-## Tech Stack
+```bash
+pip install -r requirements.txt
+```
 
-- Python
-- PostgreSQL
-- Streamlit
-- Git
+Copy:
 
-## Result
+```bash
+cp .env.example .env
+```
 
-Built a local analytics stack successfully.
+Update database credentials.
+
+## Run
+
+Generate sample data:
+
+```bash
+python scripts/generate_reviews.py
+```
+
+Create table:
+
+```bash
+python scripts/create_table.py
+```
+
+Load data:
+
+```bash
+python scripts/load_reviews.py
+```
+
+## Schema
+
+| Column | Description |
+|----------|----------|
+| review_id | Review identifier |
+| agent | Agent reviewed |
+| review_date | Review date |
+| tickets_reviewed | Tickets reviewed |
+| ovv_score | Original review score |
+| qa_score | QA challenge score |
